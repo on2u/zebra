@@ -66,7 +66,7 @@ zebra = """              ████████
                     ░░    ░░                  ░░░░  ░░░░░░                  
 """
 
-class meow(discord.Client):
+class zebra(discord.Client):
 
     def __init__(self, *args, **kwargs):
 
@@ -175,6 +175,6 @@ class meow(discord.Client):
         super().run(self.token, bot=False)
 
 if __name__ == "__main__":
-    meow = meow()
-    meow.run()
+    zebra = zebra()
+    zebra.run()
 
