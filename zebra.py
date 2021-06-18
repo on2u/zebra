@@ -21,7 +21,7 @@ def padToCenter(l:list,w:int)->str:
 # put your token between the quotes below
 token = ""
 
-zebra = """              ████████                                                      
+zebra1 = """              ████████                                                      
       ██      ██  ░░░░██  ██                                                
     ██  ██    ██  ░░░░████  ██                                              
     ██  ██    ██░░░░▒▒██    ██                                              
@@ -167,7 +167,7 @@ class zebra(discord.Client):
     async def on_connect(self):
         width = shutil.get_terminal_size().columns
         
-        print (padToCenter(zebra.splitlines(),width))
+        print (padToCenter(zebra1.splitlines(),width))
         print ("----------------------------------------".center(width))
         print (f"Yeehaw: {self.user}".center(width))
     
